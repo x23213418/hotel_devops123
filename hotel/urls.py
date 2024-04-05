@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import krishna.views as views
+from krishna import views
 urlpatterns = [
     path('', views.homepage,name="homepage"),
     path('home', views.homepage,name="homepage"),
@@ -39,6 +39,4 @@ urlpatterns = [
     path('staff/panel/edit-room/edit', views.edit_room),
     path('staff/panel/view-room', views.view_room),
     path('admin/', admin.site.urls),
-    
-
 ]
